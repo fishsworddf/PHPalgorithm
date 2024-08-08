@@ -20,6 +20,7 @@ function countConsonants(string $string): int
     $consonantCount = 0;
 
     for ($i = 0; $i < strlen($string); $i++) {
+        //这个判断还是蛮严谨的
         if (
             !in_array($string[$i], $vowels) &&
             $string[$i] >= 'a' && $string[$i] <= 'z'
